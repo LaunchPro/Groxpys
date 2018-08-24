@@ -9,35 +9,35 @@ client.on('message', message => {
     if (message.content === 'sa') {
     	message.reply('**Aleykum Selam Bilader**');
    }
-    if (message.content === '!temizle') {
+    if (message.content === 'g!temizle') {
     	message.Delete()  
         message.channel.sendMessage('**Hizmet YOK**')
      }
-     if (message.content === '!kurabiye') {
+     if (message.content === 'g!kurabiye') {
         message.channel.sendMessage(`Canım gel buraya sana kurabiye vereceğim! <@${message.author.id}>`)
         message.react("🍪")
      }
-      if (message.content === '!botudöv') {
+      if (message.content === 'g!botudöv') {
         message.channel.sendMessage('**Al işte, beğendin mi yaptığını? Ağlattın Beni!** :cold_sweat: :cold_sweat: :cold_sweat: :cold_sweat:')
      }
-      if (message.content === '!köpek') {
+      if (message.content === 'g!köpek') {
         message.channel.sendMessage('**:dog: :dog:  Hav Hav Hav Hav :dog: :dog:**')
      }
-      if (message.content === '!kedi') {
+      if (message.content === 'g!kedi') {
         message.channel.sendMessage('**:cat: :cat:   Miyav Miyav Miyav :cat: :cat: **')
      }
-      if (message.content === '!afk') {
+      if (message.content === 'g!afk') {
         message.reply(':zipper_mouth: :zipper_mouth: ** ARTIK AFK , SİZİ DUYMAZ ** :zipper_mouth: :zipper_mouth:  ')
      }  
       if (message.content === 'amk') {
           message.delete();
           message.reply(':rage: :rage:  ** Küfür Etmemelisin** :rage: :rage:  ')
      }
-       if (message.content === '!swaç') {
+       if (message.content === 'g!swaç') {
            message.reply('**Hizmet YOK**')
     
      }
-    if (message.content ==="sunucubilgi") {
+    if (message.content ==="g!sunucubilgi") {
         const embed = new Discord.RichEmbed()
 
             .addField("Sunucu Adı", message.guild.name, true)
@@ -56,7 +56,7 @@ client.on('message', message => {
 
         return message.channel.sendEmbed(embed)       
     }
-    if (message.content ==="davet") {
+    if (message.content ==="g!davet") {
         const embed = new Discord.RichEmbed()
 
             .addField("Davet Linki", "Destek Sunucusu" , true)
@@ -67,10 +67,10 @@ client.on('message', message => {
         
         return message.channel.sendEmbed(embed)
     }
-     if (message.content ==="botbilgi") {
+     if (message.content ==="g!botbilgi") {
         const embed = new Discord.RichEmbed()
 
-            .addField("Bot Sahibi", "@Hamza Eser#6628" , true)
+            .addField("Bot Sahibi", "@Launchpro#6359" , true)
 
             .addField("Version", "2.0" , true)
         
@@ -80,7 +80,7 @@ client.on('message', message => {
         
         return message.channel.sendEmbed(embed)
     }
-     if (message.content ==="yardım") {
+     if (message.content ==="g!yardim") {
         const embed = new Discord.RichEmbed()
 
             .addField("1", "Eglence" , true)
@@ -89,13 +89,13 @@ client.on('message', message => {
         
             .addField("3", "Kullanıcı Komutları" , true)
         
-            .setFooter("**Flora-Bot**  Kullanımı --> !Yardım [Sayı]  ")
+            .setFooter("**Groxpys**  Kullanımı --> !Yardım [Sayı]  ")
 
             .setColor(0xff0000)
         
         return message.channel.sendEmbed(embed)
     }
-      if (message.content ==="yardım 1") {
+      if (message.content ==="g!yardim 1") {
         const embed = new Discord.RichEmbed()
 
             .addField("!kurabiye --> Size Kurabiye Verir")
@@ -130,7 +130,7 @@ client.on('message', message => {
 
             .addField("Site", "Serverip" , true)
 
-            .addField("FloraNetwork.Bati.Host", " FloraNetwork.batihost.com" , true)
+            .addField("", "" , true)
        
             .setColor(0x000001)
         
@@ -152,7 +152,7 @@ client.on('message', message => {
      .addField('\:bust_in_silhouette: / İsmi: ', `${member}`)
      .addField('\ 📤 / Hoşgeldin', `${member}`)
      .addField('\:white_check_mark: / Bu Hesap Güvenli Gözüküyor', `► Oyuncu ◄`)
-     .setFooter(`Flora-Bot`)
+     .setFooter(`Groxpys`)
      .setTimestamp()
   
      channel.sendEmbed(embed);
